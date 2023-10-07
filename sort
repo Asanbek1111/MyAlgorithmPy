@@ -1,0 +1,21 @@
+def bubble_sort(arr):
+    n = len(arr) #Длина листа
+
+    for i in range(n):
+
+        for j in range(0, n - i - 1):
+
+            #Если текуий элемент больше следующего, заменить места с элементов ментше
+            if arr[j] > arr[j + 1]:
+                # arr[j] - текущий элемент
+                #arr[j + 1] - следующий элемент
+                
+                # замена arr[j] на arr[j + 1], а arr[j + 1] на arr[j]
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+            
+
+my_list = [1,2,31,23,1,41,2342,5412,52341,35,23,61346,1111,11,345,13,41,3,451,3]
+bubble_sort(my_list)
+
+
+print(my_list)
